@@ -1,180 +1,153 @@
 <!doctype html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-            name="description"
-            content="ポートフォリオサイトのトップページです。プロフィール、制作物、スキル、連絡先を掲載しています。"
-        />
-        <title>Ina Toshi | Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <header class="site-header">
-            <a class="brand" href="#top" aria-label="トップへ">Ina Toshi</a>
-            <nav class="site-nav" aria-label="メインナビゲーション">
-                <a href="#about">About</a>
-                <a href="#works">Works</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
 
-        <main id="top">
-            <section class="hero" aria-labelledby="hero-title">
-                <div class="hero__content">
-                    <p class="eyebrow">Portfolio</p>
-                    <h1 id="hero-title">
-                        ものづくりで、伝わる体験を設計する。（適時更新中！！）
-                    </h1>
-                    <p class="hero__lead">
-                        RUST言語でRaspBerryPiアプリケーション開発実績をまとめたポートフォリオです。
-                        ちょっと変わった、IoTものづくりで情報発信しています。
-                    </p>
-                    <div class="hero__actions" aria-label="主要リンク">
-                        <a class="button button--primary" href="#works"
-                            >制作物を見る</a
-                        >
-                        <a class="button button--secondary" href="#contact"
-                            >問い合わせる</a
-                        >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ポートフォリオサイトのトップページです。プロフィール、制作物、スキル、連絡先を掲載しています。" />
+    <title>Ina Toshi | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="トップへ">Ina Toshi</a>
+        <nav class="site-nav" aria-label="メインナビゲーション">
+            <a href="#about">About</a>
+            <a href="#works">Works</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <p class="eyebrow">Portfolio</p>
+                <h1 id="hero-title">
+                    ものづくりで、伝わる体験。プログラミング！！
+                </h1>
+                <p class="hero__lead">
+                    RaspBerryPiアプリケーション開発実績をまとめたポートフォリオです。
+                    ちょっと変わった、IoTものづくりで情報発信します。
+                    C言語とRUSTを使ったRaspberry Pi プログラミング
+                </p>
+                <div class="hero__actions" aria-label="主要リンク">
+                    <a class="button button--primary" href="#works">制作物を見る</a>
+                    <a class="button button--secondary" href="#contact">問い合わせる</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section section--split" aria-labelledby="about-title">
+            <div>
+                <p class="section__label">About</p>
+                <h2 id="about-title">プロフィール</h2>
+                <p>
+                    兵庫県在住 <br>
+                    1962年7月生まれ、壬寅（みずのえ・とら）<br>
+                    - 開発環境 -<br>
+                    Apple MAC mini (2024) M4 16G <br>
+                    Raspberry Pi Pico 2 W (R 020-2403999,T D240121020) <br>
+                </p>
+            </div>
+            <div class="section__body">
+                <p>
+                    長年、C言語での組込み系エンジニアとして、ICカード端末などの開発に取り組んできました。
+                    現在は、開発現場から離れ、事務処理や若手エンジニアの育成に関わっています。
+                </p>
+                <p>
+                    最近、RUST言語に興味を持ち、自己学習に取り組んでいましたが、実際に開発したくなり,
+                    Raspbery Pi Pico 2 W を入手、embassyのリポジトリから取得したサンプルコードで動かことに挑戦しました。
+                    最初は、思う様に動作しませんでしたが、AIに力を借りて動作を確認できたので公開します。
+                    もし、同じ様に、悩んでいる人がいたら、ぜひ試してみてください。
+                </p>
+                <p>
+                    これからも、RaspBerry Pi を使ったプログラミングを続けて行き、
+                    少しづつですが公開して行きたいと思っています。
+                    WEBページ作成も初挑戦です。こちらもブラッシュアップして行きます。
+                </p>
+            </div>
+        </section>
+
+        <section id="works" class="section" aria-labelledby="works-title">
+            <div class="section__heading">
+                <p class="section__label">Works</p>
+                <h2 id="works-title">制作物</h2>
+            </div>
+            <div class="work-grid">
+                <article class="work-card">
+                    <div class="work-card__media" aria-hidden="true"></div>
+                    <div class="work-card__body">
+                        <p class="work-card__category">Web Site</p>
+                        <h3>Rapberyy Pi Pico 2 W 動作確認 (RUST)</h3>
+                        <p>
+                            Lチカ、Wifi,LCD(2004),BLE接続の動作確認済みソースコード。
+                            embassyソースコードも、直ぐに確認できる様に同梱しています。
+                        </p>
+                        <a href="https://github.com/ina-toshi/INATOSHI-DEV" target="_blank" rel="noreferrer"
+                            aria-label="RapberyyPi-PICO2-W 動作確認 (RUST) の詳細を見る">詳細を見る</a>
                     </div>
-                </div>
-            </section>
+                </article>
 
-            <section
-                id="about"
-                class="section section--split"
-                aria-labelledby="about-title"
-            >
-                <div>
-                    <p class="section__label">About</p>
-                    <h2 id="about-title">プロフィール</h2>
-                </div>
-                <div class="section__body">
-                    <p>
-                        長年、C言語での組込み系エンジニアとして、ICカード端末などの開発に取り組んできました。
-                        現在は、開発現場から離れ、事務処理や若手エンジニアの育成に関わっています。
-                    </p>
-                    <p>
-                        最近、RUST言語に興味を持ち、自己学習に取り組んでいましたが、実際に開発したくなりました。
-                        RaspberyPi-PICO-W　を入手、embassyのリポジトリから取得したサンプルコードで動か
-                        してみましたが、思う様に動作しませんでした。AIに力を借りて動作を確認できたので、公開し
-                        ます。もし、同じ様な思いをしている人がいれば、ぜひ試してみてください。
-                    </p>
-                </div>
-            </section>
+                <article class="work-card">
+                    <div class="work-card__media work-card__media--green" aria-hidden="true"></div>
+                    <div class="work-card__body">
+                        <p class="work-card__category">Application</p>
+                        <h3>VL53L5CX(ToF)搭載ボード + Pico 2</h3>
+                        <p>
+                            新しくセンサーを購入したので、C言語でサンプルプログラムを作成しました。
+                            Pico 2 W の WiFiやBluethoothと合わせて人検知端末に進化させようと思っています。
+                            <br>
+                        </p>
+                        <a href="#" aria-label="？？センサーを接続したアプリ の詳細を見る">詳細をみる</a>
+                    </div>
+                </article>
 
-            <section id="works" class="section" aria-labelledby="works-title">
-                <div class="section__heading">
-                    <p class="section__label">Works</p>
-                    <h2 id="works-title">制作物</h2>
-                </div>
-                <div class="work-grid">
-                    <article class="work-card">
-                        <div class="work-card__media" aria-hidden="true"></div>
-                        <div class="work-card__body">
-                            <p class="work-card__category">Web Site</p>
-                            <h3>RapberyyPi-PICO2-W 動作確認 (RUST)</h3>
-                            <p>
-                                Lチカ、Wifi,LCD(2004),BLE接続の動作確認済みソースコード。
-                                embassyのソースコードも直ぐに確認できる様に同梱としています。
-                            </p>
-                            <a
-                                href="https://github.com/ina-toshi/INATOSHI-DEV"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label="RapberyyPi-PICO2-W 動作確認 (RUST) の詳細を見る"
-                                >詳細を見る</a
-                            >
-                        </div>
-                    </article>
+                <article class="work-card">
+                    <div class="work-card__media work-card__media--orange" aria-hidden="true"></div>
+                    <div class="work-card__body">
+                        <p class="work-card__category">Design</p>
+                        <h3>RUST プログラミング</h3>
+                        <p>
+                            C言語でいろいろ確認できたら、RUSTプログラムに作り直してしてみたい。
+                            <br><br>
+                        </p>
+                        <p></p> 詳細はまだ</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-                    <article class="work-card">
-                        <div
-                            class="work-card__media work-card__media--green"
-                            aria-hidden="true"
-                        ></div>
-                        <div class="work-card__body">
-                            <p class="work-card__category">Application</p>
-                            <h3>？？センサーを接続したアプリ</h3>
-                            <p>
-                                新しくセンサーを購入したのでプログラム作成に挑戦！！
-                                まだ、作成中です。完成したらアップします。
-                            </p>
-                            <a
-                                href="#"
-                                aria-label="？？センサーを接続したアプリ の詳細を見る"
-                                >詳細はまだ</a
-                            >
-                        </div>
-                    </article>
+        <section id="skills" class="section section--muted" aria-labelledby="skills-title">
+            <div class="section__heading">
+                <p class="section__label">Skills</p>
+                <h2 id="skills-title">スキル</h2>
+            </div>
+            <ul class="skill-list">
+                <li>Ｃ言語 / C#.NET / Java,Python / RUST</li>
+                <li>Git / GitHub</li>
+            </ul>
+        </section>
 
-                    <article class="work-card">
-                        <div
-                            class="work-card__media work-card__media--orange"
-                            aria-hidden="true"
-                        ></div>
-                        <div class="work-card__body">
-                            <p class="work-card__category">Design</p>
-                            <h3>Ｃ言語プログラミング</h3>
-                            <p>
-                                RUST言語でいろいろ確認できたら、今更ながらＣ言語でプログラムしてみます。
-                            </p>
-                            <a
-                                href="#"
-                                aria-label="Ｃ言語プログラミング の詳細を見る"
-                                >詳細はまだ</a
-                            >
-                        </div>
-                    </article>
-                </div>
-            </section>
+        <section id="contact" class="section section--contact" aria-labelledby="contact-title">
+            <div>
+                <p class="section__label">Contact</p>
+                <h2 id="contact-title">お問い合わせ</h2>
+                <p>
+                    制作のご相談、採用に関するご連絡などは、下記のリンクからお願いします。
+                </p>
+            </div>
+            <div class="contact-links" aria-label="連絡先リンク">
+                <a href="mailto:ina.toshi.fumi@gmail.com">ina.toshi.fumi@gmail.com</a>
+                <a href="https://github.com/ina-toshi/" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </section>
+    </main>
 
-            <section
-                id="skills"
-                class="section section--muted"
-                aria-labelledby="skills-title"
-            >
-                <div class="section__heading">
-                    <p class="section__label">Skills</p>
-                    <h2 id="skills-title">スキル</h2>
-                </div>
-                <ul class="skill-list">
-                    <li>Ｃ言語 / C#.NET / (Java,Python) / RUST</li>
-                    <li>Git / GitHub</li>
-                </ul>
-            </section>
+    <footer class="site-footer">
+        <small>&copy; 2026 Ina Toshi. All rights reserved.</small>
+    </footer>
+</body>
 
-            <section
-                id="contact"
-                class="section section--contact"
-                aria-labelledby="contact-title"
-            >
-                <div>
-                    <p class="section__label">Contact</p>
-                    <h2 id="contact-title">お問い合わせ</h2>
-                    <p>
-                        制作のご相談、採用に関するご連絡などは、下記のリンクからお願いします。
-                    </p>
-                </div>
-                <div class="contact-links" aria-label="連絡先リンク">
-                    <a href="mailto:ina.toshi.fumi@gmail.com"
-                        >ina.toshi.fumi@gmail.com</a
-                    >
-                    <a
-                        href="https://github.com/ina-toshi/"
-                        target="_blank"
-                        rel="noreferrer"
-                        >GitHub</a
-                    >
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer">
-            <small>&copy; 2026 Ina Toshi. All rights reserved.</small>
-        </footer>
-    </body>
 </html>
