@@ -80,7 +80,7 @@ a {
 }
 
 .hero__content {
-  width: min(780px, 100%);
+  width: min(1100px, 100%);
   align-self: center;
 }
 
@@ -110,9 +110,13 @@ h3 {
 }
 
 h1 {
-  max-width: 12em;
-  font-size: clamp(2.55rem, 7vw, 5.8rem);
+  max-width: none;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
   letter-spacing: 0;
+}
+
+.hero__headline {
+  white-space: nowrap;
 }
 
 h2 {
@@ -316,6 +320,10 @@ h3 {
 }
 
 @media (max-width: 520px) {
+  h1 {
+    font-size: clamp(1.35rem, 6vw, 2.4rem);
+  }
+
   .site-nav {
     width: 100%;
     justify-content: space-between;
