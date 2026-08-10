@@ -214,6 +214,10 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.work-card--experimental {
+  border-color: #b9a6d6;
+}
+
 .work-card__media {
   min-height: 180px;
   background:
@@ -242,6 +246,13 @@ h3 {
   background-size: auto, 20px 20px, 20px 20px;
 }
 
+.work-card__media--violet {
+  background:
+    linear-gradient(135deg, rgb(103 76 143 / 92%), rgb(39 59 103 / 86%)),
+    repeating-linear-gradient(90deg, transparent 0 20px, rgb(255 255 255 / 15%) 20px 21px),
+    repeating-linear-gradient(0deg, transparent 0 20px, rgb(255 255 255 / 12%) 20px 21px);
+}
+
 .work-card__body {
   display: grid;
   gap: 10px;
@@ -251,6 +262,15 @@ h3 {
 .work-card__body p {
   margin: 0;
   color: var(--muted);
+}
+
+.work-card__notice {
+  padding: 12px 14px;
+  border-left: 4px solid #7652a7;
+  background: #f4f0fa;
+  color: #503b68 !important;
+  font-size: 0.9rem;
+  line-height: 1.65;
 }
 
 .work-card__body a {
